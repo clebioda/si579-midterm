@@ -17,5 +17,5 @@ const thingCountOutput = document.querySelector('#problem-2 #thing-count');
 thingCountOutput.textContent = "You added 0 things";
 thingInput.addEventListener('change', () => {
     let currentValue = thingInput.value;
-    thingCountOutput.textContent = "You added " + currentValue + " thing" + addS(parseInt(currentValue));
+    thingCountOutput.textContent = "You added " + parseInt(currentValue) + " thing" + addS(parseInt(currentValue));
 });
